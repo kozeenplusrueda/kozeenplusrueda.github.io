@@ -32,8 +32,8 @@ a:hover {
 }
 img {
   display: block;
-  width: 100%;
-  max-width: 1200px;
+  /* width: 100%; */
+  /* max-width: 1200px; */
 }
 
 .container {
@@ -60,6 +60,15 @@ img {
   bottom: 0;
 }
 
-@media only screen and (min-width: 1000px) {
- 
+@media only screen and (min-width: 500px) {
+  .graphics {
+    height: 100vh;
+  }
+  .col {
+    width: auto;
+    height: 100vh;
+  }
+  .col img {
+    height: 100%;
+  }
 }
