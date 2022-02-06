@@ -4,13 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
-  background-color: #FF4C00;
-  /* background-image: url("/img/dots.png");
-  background-size: 1830px auto;
-  background-position: top left; */
+  background-color: #fe4d01;
   color: #000000;
-  /* font-family: "source code", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-   */
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
 }
@@ -59,16 +54,28 @@ img {
   right: 30px;
   bottom: 0;
 }
+.logo {
+  text-transform: uppercase;
+}
 
 @media only screen and (min-width: 500px) {
   .graphics {
     height: 100vh;
+    overflow: hidden;
   }
   .col {
     width: auto;
-    height: 100vh;
+    height: 107.7vh;
+    top: 0;
+    bottom: 0;
   }
   .col img {
     height: 100%;
+  }
+  .left {
+    left: -5px;
+  }
+  .right {
+    right: -5px;
   }
 }
