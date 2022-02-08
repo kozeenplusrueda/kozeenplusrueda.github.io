@@ -59,7 +59,6 @@ img {
   letter-spacing: -1px;
 }
 .col {
-  position: absolute;
   display: none;
 }
 /* .left {
@@ -73,14 +72,26 @@ img {
 } */
 
 
-/* @media only screen and (min-width: 821px) {
+@media only screen and (min-width: 821px) {
   .mobile {
     display: none;
   }
-  .graphics {
-    height: 100vh;
-    overflow: hidden;
+  .logo span {
+    display: none;
+  }
+  .contacts {
+    margin-top: 0;
+  }
+  .content {
+    top: 1vw;
+    bottom: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .col {
     display: block;
+    position: absolute;
   }
   .col {
     width: auto;
@@ -97,4 +108,4 @@ img {
   .right {
     right: -5px;
   }
-} */
+}
