@@ -75,9 +75,9 @@ img {
   .col {
     display: block;
     width: auto;
-    height: 111.5vh;
+    height: 100vh;
     position: absolute;
-    top: -4.5vh;
+    top: 0;
     bottom: 0;
   }
   .col img {
@@ -97,7 +97,7 @@ img {
     right: 57vw;
     display: flex;
     flex-direction: column-reverse;
-    width: 95.9vh;
+    width: 95.8vh;
     transform: rotate(-90deg);
     transform-origin: top right;
   }
