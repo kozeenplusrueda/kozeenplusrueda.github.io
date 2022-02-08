@@ -11,6 +11,9 @@ body {
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
+  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
   overflow: hidden;
 }
 * {
@@ -38,6 +41,9 @@ img {
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
+  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
   width: 100%;
   overflow: hidden;
 }
