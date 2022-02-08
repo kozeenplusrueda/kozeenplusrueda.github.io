@@ -56,6 +56,7 @@ img {
 .contacts {
   font-size: 4.2vw;
   margin-top: 31.6vw;
+  letter-spacing: -1px;
 }
 .col {
   position: absolute;
