@@ -43,7 +43,7 @@ img {
 }
 .content {
   position: absolute;
-  top: 64vw;
+  top: 55vw;
   right: 6.5vw;
   left: 6.5vw;
   z-index: 9999;
