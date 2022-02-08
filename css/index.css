@@ -30,21 +30,17 @@ img {
   width: 100%;
 }
 
-.container {
+.container, .graphics {
   height: 100vh;
   min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   overflow: hidden;
-}
-.graphics {
-  position: relative;
-  width: 100%;
-  /* height: 90vh;
-  display: none; */
 }
 .content {
   position: absolute;
   top: 64vw;
+  right: 6.5vw;
   left: 6.5vw;
   z-index: 9999;
 }
