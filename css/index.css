@@ -31,22 +31,37 @@ img {
 }
 
 .container {
-  display: flex;
-  align-items: center;
   height: 100vh;
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 .graphics {
   position: relative;
   width: 100%;
-  height: 90vh;
-  display: none;
+  /* height: 90vh;
+  display: none; */
+}
+.content {
+  position: absolute;
+  top: 64vw;
+  left: 6.5vw;
+  z-index: 9999;
+}
+.logo {
+  text-transform: uppercase;
+  font-size: 7vw;
+  letter-spacing: 1px;
+}
+.contacts {
+  font-size: 4.2vw;
+  margin-top: 31.6vw;
 }
 .col {
   position: absolute;
+  display: none;
 }
-.left {
+/* .left {
   width: 80vw;
   top: 0;
   left: 0;
@@ -54,12 +69,10 @@ img {
 .right {
   right: 0;
   bottom: 0;
-}
-.logo {
-  text-transform: uppercase;
-}
+} */
 
-@media only screen and (min-width: 821px) {
+
+/* @media only screen and (min-width: 821px) {
   .mobile {
     display: none;
   }
@@ -83,4 +96,4 @@ img {
   .right {
     right: -5px;
   }
-}
+} */
