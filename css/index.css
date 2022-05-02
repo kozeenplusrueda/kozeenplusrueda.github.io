@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'AeonikFono-Regular';
+    src: url('/fonts/AeonikFono-Regular.woff2') format('woff2'),
+        url('/fonts/AeonikFono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch;
@@ -6,7 +15,7 @@ body {
   padding: 0;
   background-color: #FF4C00;
   color: #000000;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'AeonikFono-Regular', monospace;
   font-size: 16px;
   height: 100vh;
   min-height: 100vh;
@@ -62,7 +71,8 @@ img {
 .contacts {
   font-size: 4.2vw;
   margin-top: 31.6vw;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .col {
   display: none;
@@ -113,11 +123,17 @@ img {
     margin-top: 0;
     margin-bottom: 3.5vh;
     font-size: 1.54vh;
-    display: flex;
-    letter-spacing: 0px;
+    /* display: flex; */
+  }
+  .contacts .row {
+    display: inline-block;
+  }
+  .contacts .row.pdf {
+    display: block;
+    margin-top: 18px;
   }
   .contacts .row:first-child {
-    margin-right: 6vh;
+    margin-right: 3vh;
   }
 }
 
