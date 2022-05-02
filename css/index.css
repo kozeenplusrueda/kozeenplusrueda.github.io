@@ -129,7 +129,7 @@ img {
   }
   .contacts .row.pdf {
     display: block;
-    /* margin-top: 18px; */
+    margin-top: 8px;
   }
   .contacts .row:first-child {
     margin-right: 3vh;
