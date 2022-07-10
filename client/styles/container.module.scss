@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./mixins";
+
+.container {
+  padding: 0 $grid-mobile;
+
+  @include respond-to(medium) {
+    padding: 0 $grid;
+  }
+}

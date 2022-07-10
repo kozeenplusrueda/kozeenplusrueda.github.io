@@ -1,0 +1,182 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.hidden-mobile {
+  display: none;
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+.hidden-desktop {
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 8px;
+
+  @include respond-to(medium) {
+    padding-top: 2px;
+  }
+
+  .number,
+  .headline,
+  .year {
+    font-size: $font-size-60;
+    line-height: $line-height-60;
+    text-transform: uppercase;
+  }
+}
+
+.fake {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 300px;
+  background-color: $color-orange;
+
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+.cover-desktop {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100vh;
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+.cover-mobile {
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+.summary {
+  position: relative;
+  background-color: $color-orange;
+
+  @include respond-to(medium) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .summary-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: $grid-mobile;
+
+    @include respond-to(medium) {
+      margin-bottom: $grid * 1.2;
+    }
+  }
+
+  .texts {
+    padding-top: 29px;
+    padding-bottom: 17px;
+
+    @include respond-to(medium) {
+      width: 40%;
+      padding-top: $grid * 2.5;
+      padding-bottom: 10vw;
+    }
+  }
+
+  .summary-image {
+    position: relative;
+    width: 60%;
+  }
+
+  .left,
+  .right {
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+    text-transform: uppercase;
+  }
+
+  .left {
+    width: 26%;
+  }
+
+  .right {
+    width: 74%;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.description {
+  padding-top: 16px;
+  padding-bottom: 43px;
+
+  @include respond-to(medium) {
+    padding-top: 8vw;
+  }
+
+  .label,
+  .text {
+    font-size: $font-size-16;
+    line-height: $line-height-16;
+  }
+
+  .label {
+    margin-bottom: $grid-mobile;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+
+    @include respond-to(medium) {
+      margin-bottom: $grid * 1.7;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 100%;
+
+  &:nth-child(odd) {
+    margin-left: auto;
+  }
+
+  &:nth-child(even) {
+    margin-right: auto;
+  }
+
+  &:first-child {
+    @include respond-to(medium) {
+      display: none;
+    }
+  }
+
+  &.horizontal {
+    @include respond-to(medium) {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #d8d5d4;
+$color-orange: #ff4d00;
+$color-pink: #ff86d6;
+$color-blue: #0047ff;
+$color-red: #fb1e1e;
+
+$base-font-family: "AeonikFono", serif;
+$font-mobile: 20px;
+
+$font-size-16: clamp(10px, 1.1111111111111112vw, 16px);
+$line-height-16: clamp(11.4px, 1.2666666666666666vw, 18.24px);
+
+$font-size-20: clamp(14px, 1.3888888888888888vw, 20px);
+$line-height-20: clamp(15.96px, 1.5833333333333333vw, 22.8px);
+
+$font-size-30: clamp(20px, 2.0833333333333335vw, 30px);
+$line-height-30: clamp(22.8px, 2.3750000000000004vw, 34.2px);
+
+$font-size-60: clamp(20px, 4.166666666666667vw, 60px);
+$line-height-60: clamp(22.8px, 4.750000000000001vw, 68.4px);
+
+// grid
+$grid: 10px;
+$grid-mobile: 6px;
+
+// sizes
+$sizeXXL: 1760px;
+$sizeXL: 1180px;
+$sizeL: 1024px;
+$sizeM: 808px;
+$sizeS: 320px;
+
+$sizeContentMax: 1920px;
+$sizeMax: $sizeXXL;
+
+$base-transition-style: cubic-bezier(0.66, 0, 0.07, 1);

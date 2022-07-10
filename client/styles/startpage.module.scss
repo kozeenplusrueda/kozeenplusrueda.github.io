@@ -1,0 +1,85 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.mobile {
+  @include respond-to(medium) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+.item,
+.mobile,
+.desktop {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 8px;
+
+  @include respond-to(medium) {
+    padding-top: 2px;
+  }
+
+  .number,
+  .headline,
+  .year {
+    font-size: $font-size-30;
+    line-height: $line-height-30;
+    text-transform: uppercase;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+
+  .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .number,
+  .headline,
+  .year {
+    font-size: $font-size-30;
+    line-height: $line-height-30;
+    text-transform: uppercase;
+  }
+
+  .number {
+    display: inline-block;
+    background-color: $color-orange;
+    padding: 2px $grid-mobile;
+    padding-right: 56px;
+  }
+
+  .textwrapper {
+    padding: 2px $grid-mobile;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-orange;
+  }
+}

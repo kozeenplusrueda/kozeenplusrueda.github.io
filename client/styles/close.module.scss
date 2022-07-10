@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  padding: $grid $grid-mobile;
+  cursor: pointer;
+
+  @include respond-to(medium) {
+    padding: $grid * 2 $grid;
+  }
+
+  &.small {
+    @include respond-to(medium) {
+      padding: $grid;
+    }
+  }
+}
+
+.close {
+  width: clamp(17px, 3.1944444444444446vw, 40px);
+
+  &.small {
+    width: clamp(17px, 1.7361111111111112vw, 25px);
+  }
+}

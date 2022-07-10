@@ -1,0 +1,80 @@
+:root {
+  --color-main: rgba(0, 0, 0, 1);
+  --color-bg: #d8d5d4;
+  --color-white: #ffffff;
+  --grid: 10px;
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom); /* THIS ONE GETS US THE HOME BAR HEIGHT */
+  --sal: env(safe-area-inset-left);
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "AeonikFono";
+  font-style: normal;
+  src: url("/fonts/AeonikFono-Regular.woff2") format("woff2"),
+    url("/fonts/AeonikFono-Regular.woff") format("woff");
+  font-display: block;
+}
+
+/* @font-face {
+  font-family: "AeonikFono-Bold";
+  src: url("/fonts/AeonikFono-Bold.woff2") format("woff2"),
+    url("/fonts/AeonikFono-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-main);
+  font-size: 10px;
+  font-family: "AeonikFono", serif;
+  line-height: 11.4px;
+  background-color: var(--color-bg);
+
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+@media only screen and (min-width: 808px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
